@@ -1,5 +1,5 @@
 ## What is this project
-A little web project to train my React skills @Efrei<br>
+A little web project to train my React skills<br>
 It's a simple budget calculator
 
 ## Prerequisites
