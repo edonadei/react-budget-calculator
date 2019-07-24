@@ -1,15 +1,50 @@
-import React from "react";
+import React, { useState} from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Switch, Route } from "react-router-dom";
+import Alert from "./components/Alert";
+import ExpenseForm from "./components/ExpenseForm";
+import ExpenseList from "./components/ExpenseList";
+import uuid from "uuid/v4";
+
+const initialExpenses = [
+  {
+    id: uuid(),
+    charge: "rent",
+    amount: 1600
+  },
+  {
+    id: uuid(),
+    charge: "car payment",
+    amount: 200
+  },
+  {
+    id: uuid(),
+    charge: "credit cart bill",
+    amount: 1200
+  }
+];
 
 function App() {
+  // 1: The json with expenses 2: The function
+  const [expenses, setExpenses] = useState(initialExpenses);
+  console.log(expenses);
+  console.log(setExpenses);
+
   return (
-    <div className="">
-      <h2>
-        Hello from app
-      </h2>
-    </div>
+    <React.Fragment>
+      <Alert />
+      <h1>Budget calculator</h1>
+      <main className="App">
+        <ExpenseForm />
+        <ExpenseList expenses={expenses} />
+      </main>
+      <h1>
+        total spending : <span className="total">
+          € {expenses.reduce((accumulator,current) => {
+            return (accumulator += current.amount);
+          },0)}
+        </span>
+      </h1>
+    </React.Fragment>
   );
 }
 
