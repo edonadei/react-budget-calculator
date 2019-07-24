@@ -1,5 +1,5 @@
 ## What is this project
-A little web project to train my React skills @Efrei<br>
+A little web project to train my React skills<br>
 It's a simple budget calculator
 
 ## Prerequisites
@@ -7,7 +7,7 @@ It's a simple budget calculator
 - Git SCM to clone the repo
 
 # How to install and run
-### `git clone git@github.com:edonadei/siren-react-app.git`
+### `git clone git@github.com:edonadei/react-budget-calculator.git`
 
 Clone the code from this repo.<br>
 At this point, you only have the sources, you will have to install the libraries.
