@@ -2,7 +2,7 @@ import React from "react";
 import ExpenseItem from "./ExpenseItem";
 import { MdDelete } from "react-icons/md";
 
-const ExpenseList = ({ expenses }) => {
+const ExpenseList = ({ expenses, clearItems }) => {
   return (
     <React.Fragment>
       <ul className="list">
@@ -11,7 +11,7 @@ const ExpenseList = ({ expenses }) => {
         })}
       </ul>
       {expenses.length > 0 &&
-        <button className="btn">
+        <button onClick={clearItems} className="btn">
           clear expenses
           <MdDelete className="btn-icon" />
         </button>}
