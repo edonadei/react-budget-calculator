@@ -6,6 +6,8 @@ A little web project to train my React skills, it's a simple budget calculator t
 - Store the edit in local browser storage with the API **localstorage**
 <br>
 
+## **[LIVE DEMO](https://react-budget-calculator-edonadei.netlify.com/)**
+
 ![Screenshot of the app](react_budget_calculator.png)
 
 ## Prerequisites
