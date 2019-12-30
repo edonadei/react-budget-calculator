@@ -1,6 +1,5 @@
 ## What is this project
-A little web project to train my React skills<br>
-It's a simple budget calculator that can
+A little web project to train my React skills, it's a simple budget calculator that can:
 - Add an expense
 - Edit an expense
 - Delete an expense
