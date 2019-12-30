@@ -1,6 +1,13 @@
 ## What is this project
 A little web project to train my React skills<br>
-It's a simple budget calculator
+It's a simple budget calculator that can
+- Add an expense
+- Edit an expense
+- Delete an expense
+- Store the edit in local browser storage with the API **localstorage**
+<br>
+
+![Screenshot of the app](react_budget_calculator.png)
 
 ## Prerequisites
 - Node.Js to run everything
